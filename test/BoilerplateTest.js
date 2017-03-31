@@ -56,5 +56,11 @@ contract('Boilerplate', function(accounts) {
   .call('get_age_in_days', 'Get age in days after a day', [
     [[], [1]]
   ])
+  .describe('owner_check')
+  .call('owner_check', 'testing with accounts', [
+    [[{from: accounts[0]}], [true]],
+    [[{from: accounts[1]}], [false]],
+    [[{from: accounts[2]}], [false]]
+  ])
   .done();
 });

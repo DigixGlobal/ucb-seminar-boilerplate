@@ -1,8 +1,9 @@
 pragma solidity ^0.4.8;
 
+import "@digix/cacp-contracts/contracts/ACOwned.sol";
 import './Common.sol';
 
-contract Boilerplate is Common {
+contract Boilerplate is Common, ACOwned {
 
   event FireEvent(uint256 indexed _id);
 
@@ -11,6 +12,7 @@ contract Boilerplate is Common {
   function Boilerplate(address _resolver) {
     resolver = _resolver;
     birthday = now;
+    owner = msg.sender;
     init("boilerplate");
   }
 
@@ -32,7 +34,16 @@ contract Boilerplate is Common {
     return _age_in_days;
   }
 
-  
+  function owner_check()
+                       public
+                       constant
+                       returns (bool _is_owner)
+  {
+
+    _is_owner = (owner == msg.sender);
+
+    return _is_owner;
+  } 
 
 
 }
