@@ -48,4 +48,10 @@ export KEYSTORE=~/.sigmate/sigmate-v3-boilerplate-tester.json
 └── truffle.js (Truffle configuration)
 ```
 
+### Using Tempo in truffle console
+
+```
+const Tempo = require('@digix/tempo').default; 
+new Tempo(web3).then((i) => {global.tempo = i});
+```
 
