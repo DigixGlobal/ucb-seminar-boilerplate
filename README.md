@@ -16,7 +16,7 @@ npm install -g @digix/sigmate
 ### Create testing keystore 
 
 ```
-sigmate keystore --label boilerplate-tester --password mypassword
+sigmate keystore --label boilerplate-tester --password mypassword --accounts 10
 export PASSWORD=mypassword
 export KEYSTORE=~/.sigmate/sigmate-v3-boilerplate-tester.json
 ```
