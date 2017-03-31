@@ -4,6 +4,10 @@
 
 This is a boilerplate that can be used to start a new Solidity project.
 
+### Introduction Video
+
+[Watch Chris Hitchcott's introduction](https://www.youtube.com/watch?v=SFW6W-DIdIo&feature=youtu.be#t=4m10s)
+
 ## Getting Started
 
 ### Install npm dependencies 
