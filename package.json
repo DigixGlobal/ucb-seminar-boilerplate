@@ -1,0 +1,31 @@
+{
+  "name": "ucb-seminar",
+  "version": "0.0.1",
+  "description": "UC Berkeley B@B Ethereum Seminar",
+  "scripts": {
+    "truffle": "node ./node_modules/truffle/cli.js",
+    "test": "npm run truffle -- test --network test",
+    "test-server": "./node_modules/.bin/testrpc -p 6545 --verbose",
+    "test-server-attach": "geth attach http://localhost:6545",
+    "develop": "node ./scripts/watch-tests.js"
+  },
+	"devDependencies": {
+    "@digix/cacp-contracts": "0.1.0",
+    "@digix/solidity-core-libraries": "0.1.4",
+    "@digix/contest": "^0.2.5",
+    "@digix/truffle-console-helpers": "^0.0.1",
+    "@digix/truffle-lightwallet-provider": "^0.0.11",
+    "chokidar": "^1.6.1",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "ethereumjs-testrpc": "^3.0.3",
+    "truffle": "3.1.1",
+    "truffle-compile": "1.0.0",
+    "truffle-contract": "1.1.10"
+	},
+  "author": "Anthony @ DigixGlobal <ace@dgx.io>",
+  "license": "BSD-3-Clause"
+}

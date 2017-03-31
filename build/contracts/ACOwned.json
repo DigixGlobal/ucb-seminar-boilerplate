@@ -1,0 +1,35 @@
+{
+  "contract_name": "ACOwned",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "is_owner",
+      "outputs": [
+        {
+          "name": "_is_owner",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x606060405234610000575b60c1806100186000396000f300606060405263ffffffff60e060020a6000350416638da5cb5b8114602c578063ad721ff6146052575b6000565b3460005760366070565b60408051600160a060020a039092168252519081900360200190f35b34600057605c607f565b604080519115158252519081900360200190f35b600054600160a060020a031681565b60005433600160a060020a039081169116145b905600a165627a7a723058202b3e827e4d53a64a3efd69b40ed3469f3f2feb97c46c02b58c7ec11391b53ef20029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1490990804620
+}
