@@ -47,5 +47,14 @@ contract('Boilerplate', function(accounts) {
     [3],
     [47]
   ])
+  .describe('get_age_in_days')
+  .call('get_age_in_days', 'Get age in days', [
+    [[], [0]]
+  ])
+  .describe('get_age_in_days')
+  .wait(1, 86401)
+  .call('get_age_in_days', 'Get age in days after a day', [
+    [[], [1]]
+  ])
   .done();
 });
